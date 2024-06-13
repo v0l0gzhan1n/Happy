@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url('../img/bg.png') no-repeat ;
+  background-size: 1920px 1080px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.body-age{
+  background: url('../img/bg3.png') no-repeat;
+  background-size: 1920px 1080px;
+}
+.con button{
+  cursor: pointer;
+  width: 672px;
+  height: 171px;
+  background: #BEF8C7;
+  border: 10px solid #23722F;
+  border-radius: 40px;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+  transition: 0.3s;
+}
+.con p{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.con button:hover{
+  background: #23722F;
+  transition: 0.3s;
+  border: 10px solid #BEF8C7;
+  color: white;
+}
+.flower-decor-1{
+  position: absolute;
+  width: 89.93px;
+  height: 133.25px;
+  left: 572.07px;
+  top: 410px;
+}
+.flower-decor-2{
+  position: fixed;
+  width: 103.25px;
+  height: 100px;
+  left: 1237px;
+  top: 523px;
+}
+.con-wishes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.card-gif{
+  width: 240px;
+  height: 320px;
+  background: url(Checker.png);
+  border: 10px solid #23722F;
+  border-radius: 40px;
+}
+.first-row-gap, .trird-row-gap{
+  display: flex;
+  gap: 200px;
+}
+.second-row-gap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1650px;
+}
+.btn-img{
+  position: absolute;
+  left: 810px;
+  top: 393px;
+  transform: scale(1);
+  transition: transform .5s;
+}
+.second-row-gap p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.btn-img img:hover{
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+.con-age{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.con-age p{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.con-age img{
+  transform: scale(1.0);
+  transition: transform .5s;
+}
+.con-age img:hover{
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+.row-p{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 106px;
+}
+.body-wishes{
+  background: url('../img/bg2.png') no-repeat;
+  background-size: 1920px 1080px;
+}
+@media (max-device-width: 545px){
+  body{
+    background: url(../img/mob-bg.png) no-repeat;
+    background-size: contain;
+  
+  }
+  .body-wishes{
+    background: url(../img/mob-bg2.png) no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 932px;
+  }
+  .body-age{
+    background: url(../img/mob-bg3.png) no-repeat;
+    background-size: contain;
+    overflow-y: scroll;
+  }
+  .flower-decor-1{
+    display: none;
+  }
+  .con button{
+    width: 330px;
+    font-size: 30px;
+  }
+  .card-gif video {
+    border-radius: 32px;
+    width: 100%;       /* Занимает всю ширину контейнера */
+    height: 100%;      /* Занимает всю высоту контейнера */
+    object-fit: cover; /* Обеспечивает покрытие всего доступного пространства без искажения соотношения сторон */
+  }
+  .con p{
+    width: 170px;
+    font-size: 30px;
+  }
+  .con{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .flower-decor-2{
+  position: absolute;
+  width: 88.25px;
+  height: 111px;
+  left: 300px;
+  top: 248px;
+  transform: rotate(45deg);
+  }
+  .card-gif{
+    border: 7px solid #23722F;
+  }
+  .first-row-gap, .trird-row-gap{
+    flex-wrap: wrap;
+    gap: 70px;
+    row-gap: 10px;
+    width: 350px;
+    justify-content: space-between;
+  }
+  .first-row-gap .card-gif, .trird-row-gap .card-gif, .second-row-gap .card-gif{
+    width: 115px;
+    height: 140px;
+  }
+  .con-wishes{
+    gap: 0px;
+    margin-top: 30px;
+  }
+  .second-row-gap{
+    width: 350px;
+  }
+  .second-row-gap p{
+    font-size: 16px;
+    max-width: 125px;
+    text-align: left;
+    background-color: #23722fa1;
+    padding: 6px;
+    border-radius: 10px;
+  }
+  .none{
+    opacity: 0;
+  }
+  .display{
+    opacity: 1;
+  }
+  .btn-img{
+    position: static;
+    /* left: 145px;
+    top: 303px;
+    width: 135px; */
+  }
+  .btn-img img{
+    
+    width: 135px;
+    height: 160px;
+  }
+  .con-age img{
+    width: 300px;
+  }
+  .con-age p{
+    font-size: 30px;
+  }
+}
+@media (max-device-width: 545px) {
+  body{
+    background: url(../img/mob-bg.png) no-repeat;
+    background-size: cover;
+  }
+  .body-age{
+    background: url(../img/mob-bg3.png) no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+  }
+  .body-wishes{
+    background: url(../img/mob-bg2.png) no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    height: 844px;
+  }
+  .con-age img{
+    width: 300px;
+  }
+  .con-age p{
+    font-size: 30px;
+  }
+  .con button{
+    width: 330px;
+    font-size: 30px;
+  }
+  .con p{
+    width: 170px;
+    font-size: 30px;
+  }
+  .card-gif{
+    border: 7px solid #23722F;
+  }
+  .con{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .flower-decor-2{
+  display: none;
+  }
+  .first-row-gap, .trird-row-gap{
+    flex-wrap: wrap;
+    gap: 70px;
+    row-gap: 10px;
+    width: 350px;
+    justify-content: space-between;
+  }
+  .first-row-gap .card-gif, .trird-row-gap .card-gif{
+    width: 115px;
+    height: 140px;
+  }
+  .con-wishes{
+    gap: 0px;
+    margin-top: 20px;
+  }
+  .second-row-gap{
+    width: 350px;
+  }
+  .second-row-gap p{
+    font-size: 16px;
+    max-width: 125px;
+    text-align: left;
+    background-color: #23722fa1;
+    padding: 6px;
+    border-radius: 10px;
+  }
+  /* .btn-img{
+    position: absolute;
+    left: 90px;
+    top: 333px;
+    width: 135px;
+  } */
+  .btn-img img{
+    width: 105px;
+    height: 165px;
+  }
+}
+.modal {
+  display: none; /* Скрыть модальное окно по умолчанию */
+  position: fixed; /* Оставаться на месте при прокрутке */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включить прокрутку, если необходимо */
+  background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+}
+
+.modal-content {
+  background: url(../img/modal.png);
+  margin: 10% auto; /* 15% сверху и центрировано */
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 88%; /* Можете управлять шириной */
+}
+.modal .modal-content video{
+  width: 80%;
+  border: #23722F solid 10px;
+  border-radius: 40px;
+}
+.text-gif{
+  width: 80%;
+  height: fit-content;
+  background-color: #C9F4D0;
+  border: #23722F solid 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.text-gif p{
+  text-align: left;
+  display: flex;
+  text-indent: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-moz-media-controls {
+  display: none !important;
+}
+
+video::--ms-media-controls {
+  display: none !important;
+}
+.second-row-gap .modal .modal-content .text-gif p{
+  background: none;
+  max-width: none;
+  padding: 0;
+}
+@keyframes heartbeat {
+  0%, 100% {
+    color: #ff0000; /* Красный цвет начальный и конечный */
+  }
+  50% {
+    color: #ffffff; /* Белый цвет в середине анимации */
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 2s infinite; /* Анимация выполняется каждые 2 секунды бесконечно */
+}
+@keyframes heartbeat1 {
+  0%, 100% {
+    transform: scale(1); /* Начальный и конечный размер */
+    opacity: 1; /* Полная непрозрачность */
+  }
+  50% {
+    transform: scale(1.2); /* Увеличение размера на 20% */
+  }
+}
+
+.btn-img-heart {
+  display: inline-block; /* Необходимо для корректного масштабирования */
+  animation: heartbeat1 1.5s infinite; /* Анимация продолжается 1.5 секунды и повторяется бесконечно */
+  transition: transform 0.3s; /* Плавность изменения размера */
+}
